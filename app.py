@@ -10,7 +10,7 @@ executor = ThreadPoolExecutor(max_workers=10)
 session = requests.Session()
 
 # --- Configuration ---
-API_KEY = "Flash2hour"
+API_KEY = "STALINAWYp"
 BACKGROUND_FILENAME = "outfit.png"
 IMAGE_TIMEOUT = 8
 CANVAS_SIZE = (800, 800)
@@ -20,7 +20,7 @@ def fetch_player_info(uid: str, region: str):
     if not uid or not region:
         return None
     
-    player_info_url = f"https://flash-player-info.vercel.app/info?uid={uid}&key=Flash"
+    player_info_url = f"https://stalin-info-sit2.vercel.app/sendINFO/bcse?uid={uid}&region=stalin&key=STALINAWYq"
     
     try:
         resp = session.get(player_info_url, timeout=IMAGE_TIMEOUT)
